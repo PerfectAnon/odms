@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate – HeartGive</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <i class="fa-solid fa-heart-pulse"></i>
+      Heart<span class="logo-give">Give</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-outline btn-sm">Login</a>
+      <a href="donate.html" class="btn btn-primary btn-sm">
+        <i class="fa-solid fa-hand-holding-heart"></i> Donate
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <div class="page-header">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Donate
+    </div>
+    <h1>Make a Donation</h1>
+    <p>100% of your donation goes directly to verified causes</p>
+  </div>
+
+  <!-- ========== DONATE FORM ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="donate-layout">
+
+        <!-- Main Form -->
+        <div class="form-card">
+          <h2>Your Contribution</h2>
+          <p class="form-subtitle">Fill in your details to complete a secure, transparent donation.</p>
+
+          <form>
+            <!-- Personal Details -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Ramesh Kumar" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label for="pan">PAN (for 80G receipt)</label>
+                <input type="text" id="pan" placeholder="ABCDE1234F">
+              </div>
+            </div>
+
+            <!-- Cause -->
+            <div class="form-group">
+              <label for="cause">Select Cause</label>
+              <select id="cause" required>
+                <option value="" disabled selected>Choose a campaign…</option>
+                <option value="water">Clean Water for Rural Villages</option>
+                <option value="edu">Education for Every Child</option>
+                <option value="food">Emergency Food Relief Drive</option>
+                <option value="health">Children's Healthcare Fund</option>
+                <option value="disaster">Cyclone Disaster Relief Support</option>
+                <option value="winter">Winter Warmth Drive 2026</option>
+              </select>
+            </div>
+
+            <!-- Amount Presets -->
+            <div class="form-group">
+              <label>Donation Amount (₹)</label>
+              <div class="amount-presets">
+                <button type="button" class="amount-btn">₹100</button>
+                <button type="button" class="amount-btn selected">₹500</button>
+                <button type="button" class="amount-btn">₹1,000</button>
+                <button type="button" class="amount-btn">₹5,000</button>
+              </div>
+              <input type="number" id="custom-amount" placeholder="Or enter a custom amount" min="10" style="margin-top: 0;">
+            </div>
+
+            <!-- Payment Method -->
+            <div class="form-group">
+              <label>Payment Method</label>
+              <div class="payment-methods">
+                <div class="pay-option selected">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  Debit / Credit Card
+                </div>
+                <div class="pay-option">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  UPI / PhonePe
+                </div>
+                <div class="pay-option">
+                  <i class="fa-solid fa-building-columns"></i>
+                  Net Banking
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional Message -->
+            <div class="form-group">
+              <label for="msg">Message (optional)</label>
+              <textarea id="msg" placeholder="Leave a note of encouragement for the NGO team…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-lock"></i> Proceed to Secure Payment
+            </button>
+
+            <p style="font-size: 0.75rem; color: var(--text-gray); text-align: center; margin-top: 0.85rem;">
+              <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i>
+              Secured by 256-bit SSL. We never store your card details.
+            </p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="donate-sidebar">
+
+          <!-- Trust Indicators -->
+          <div class="sidebar-card">
+            <h4><i class="fa-solid fa-shield-halved" style="color: var(--primary); margin-right: 0.4rem;"></i>Why Trust HeartGive</h4>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>Verified NGOs Only</strong>
+                <p>Every organisation is screened and approved before being listed.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-lock"></i></div>
+              <div>
+                <strong>256-bit SSL Encrypted</strong>
+                <p>All payments are secured with bank-grade encryption.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-file-invoice"></i></div>
+              <div>
+                <strong>Instant Tax Receipt</strong>
+                <p>80G-compliant PDF receipt emailed immediately on success.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-eye"></i></div>
+              <div>
+                <strong>Full Transparency</strong>
+                <p>Track your donation's journey on your personal dashboard.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Impact Preview -->
+          <div class="sidebar-card">
+            <h4><i class="fa-solid fa-seedling" style="color: var(--primary); margin-right: 0.4rem;"></i>Impact of ₹500</h4>
+            <div class="trust-item" style="margin-bottom: 0.7rem;">
+              <div class="trust-icon" style="background: var(--secondary-bg); color: var(--secondary);">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <p>Provides clean drinking water for a family for <strong style="color: var(--text-dark);">3 months.</strong></p>
+            </div>
+            <div class="trust-item" style="margin-bottom: 0.7rem;">
+              <div class="trust-icon" style="background: #FFF4E5; color: #E88E1A;">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <p>Supplies textbooks for one child for a <strong style="color: var(--text-dark);">full year.</strong></p>
+            </div>
+            <div class="trust-item" style="margin-bottom: 0;">
+              <div class="trust-icon" style="background: #F0E5FF; color: #8B5CF6;">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <p>Feeds a displaced family for an <strong style="color: var(--text-dark);">entire week.</strong></p>
+            </div>
+          </div>
+
+          <!-- Current Campaign Progress -->
+          <div class="sidebar-card">
+            <h4><i class="fa-solid fa-fire" style="color: #E88E1A; margin-right: 0.4rem;"></i>Urgent Right Now</h4>
+            <p style="font-size: 0.82rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.35rem;">Cyclone Disaster Relief Support</p>
+            <p style="font-size: 0.78rem; color: var(--text-gray); margin-bottom: 0.8rem;">2,000 families in Odisha need shelter and food kits urgently.</p>
+            <div class="progress-bar" style="margin-bottom: 0.4rem;">
+              <div class="progress-fill" style="width: 83%;"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size: 0.74rem;">
+              <span style="color: var(--primary); font-weight: 600;">₹5,80,000 raised</span>
+              <span style="color: var(--text-gray);">of ₹7,00,000</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            Heart<span class="logo-give" style="color: var(--primary-light)">Give</span>
+          </a>
+          <p>A transparent, secure platform connecting compassionate donors with verified NGOs across India.</p>
+          <div class="footer-social">
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Causes</h4>
+          <ul>
+            <li><a href="campaigns.html">Clean Water</a></li>
+            <li><a href="campaigns.html">Education</a></li>
+            <li><a href="campaigns.html">Food Relief</a></li>
+            <li><a href="campaigns.html">Healthcare</a></li>
+            <li><a href="campaigns.html">Disaster Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@heartgive.org">hello@heartgive.org</a></li>
+            <li><a href="tel:+911800123456">+91 1800 123 456</a></li>
+            <li><a href="#">New Delhi, India</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 HeartGive. All rights reserved.</span>
+        <span>Made with &hearts; for a better world</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

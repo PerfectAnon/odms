@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaigns – HeartGive</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <i class="fa-solid fa-heart-pulse"></i>
+      Heart<span class="logo-give">Give</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="campaigns.html" class="active">Campaigns</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-outline btn-sm">Login</a>
+      <a href="donate.html" class="btn btn-primary btn-sm">
+        <i class="fa-solid fa-hand-holding-heart"></i> Donate
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <div class="page-header">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Campaigns
+    </div>
+    <h1>Active Campaigns</h1>
+    <p>Verified causes waiting for your generous support</p>
+  </div>
+
+  <!-- ========== CAMPAIGNS ========== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="campaigns-filter">
+        <button class="filter-btn active">All Causes</button>
+        <button class="filter-btn">Water &amp; Sanitation</button>
+        <button class="filter-btn">Education</button>
+        <button class="filter-btn">Food Relief</button>
+        <button class="filter-btn">Healthcare</button>
+        <button class="filter-btn">Disaster Relief</button>
+        <button class="filter-btn">Community</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="campaigns-grid">
+
+        <!-- Card 1 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Water &amp; Sanitation</span>
+            <img src="https://picsum.photos/seed/waterwell/600/420" alt="Clean Water Campaign">
+          </div>
+          <div class="card-body">
+            <h3>Clean Water for Rural Villages</h3>
+            <p>Solar-powered water pumps for 12 drought-affected villages in Rajasthan. Clean drinking water guaranteed by summer 2026.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹3,40,000</span>
+                <span class="p-goal">of ₹5,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 68%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>412 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Education</span>
+            <img src="https://picsum.photos/seed/education2/600/420" alt="Education Campaign">
+          </div>
+          <div class="card-body">
+            <h3>Education for Every Child</h3>
+            <p>Textbooks, uniforms, and tablets for 400 underprivileged children in rural Maharashtra and Bihar schools.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹1,80,000</span>
+                <span class="p-goal">of ₹2,50,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 72%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>289 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Food Relief</span>
+            <img src="https://picsum.photos/seed/foodbank/600/420" alt="Food Relief Campaign">
+          </div>
+          <div class="card-body">
+            <h3>Emergency Food Relief Drive</h3>
+            <p>Nutritious meal kits for families displaced by flooding in Assam. Each kit feeds a family for one week.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹92,000</span>
+                <span class="p-goal">of ₹1,50,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 61%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>178 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Healthcare</span>
+            <img src="https://picsum.photos/seed/medicalaid/600/420" alt="Healthcare Campaign">
+          </div>
+          <div class="card-body">
+            <h3>Children's Healthcare Fund</h3>
+            <p>Free medical camps and vaccinations for children under 12 in tribal communities of Jharkhand and Chhattisgarh.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹2,10,000</span>
+                <span class="p-goal">of ₹4,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 52%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>341 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Disaster Relief</span>
+            <img src="https://picsum.photos/seed/relief2026/600/420" alt="Disaster Relief Campaign">
+          </div>
+          <div class="card-body">
+            <h3>Cyclone Disaster Relief Support</h3>
+            <p>Emergency tents, blankets, and hygiene kits for 2,000 families affected by Cyclone Dana in coastal Odisha.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹5,80,000</span>
+                <span class="p-goal">of ₹7,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 83%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>892 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="campaign-card">
+          <div class="card-img">
+            <span class="card-tag">Community</span>
+            <img src="https://picsum.photos/seed/winterwarm/600/420" alt="Winter Warmth Drive">
+          </div>
+          <div class="card-body">
+            <h3>Winter Warmth Drive 2026</h3>
+            <p>Distribute warm blankets, sweaters, and socks to homeless individuals living on Delhi's streets this winter.</p>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span class="p-raised">₹48,000</span>
+                <span class="p-goal">of ₹80,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+            </div>
+            <div class="card-foot">
+              <span class="donors-info"><i class="fa-solid fa-users"></i>124 donors</span>
+              <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Want to Start a Campaign?</h2>
+        <p>If you're an NGO, register with HeartGive and reach thousands of verified donors today.</p>
+        <a href="contact.html" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-building"></i> Register Your NGO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            Heart<span class="logo-give" style="color: var(--primary-light)">Give</span>
+          </a>
+          <p>A transparent, secure platform connecting compassionate donors with verified NGOs across India.</p>
+          <div class="footer-social">
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="f-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Causes</h4>
+          <ul>
+            <li><a href="campaigns.html">Clean Water</a></li>
+            <li><a href="campaigns.html">Education</a></li>
+            <li><a href="campaigns.html">Food Relief</a></li>
+            <li><a href="campaigns.html">Healthcare</a></li>
+            <li><a href="campaigns.html">Disaster Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@heartgive.org">hello@heartgive.org</a></li>
+            <li><a href="tel:+911800123456">+91 1800 123 456</a></li>
+            <li><a href="#">New Delhi, India</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 HeartGive. All rights reserved.</span>
+        <span>Made with &hearts; for a better world</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
